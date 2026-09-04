@@ -1,8 +1,8 @@
-# Narrative State
+# Narrative State Reference
 
 ## Purpose
 
-Track the current state of dominant market narratives to inform content strategy and contrarian analysis.
+Track the current state of dominant market narratives to inform content strategy.
 
 ## Current Narrative Map (as of 2026-09-05)
 
@@ -19,11 +19,14 @@ Track the current state of dominant market narratives to inform content strategy
 | Technical momentum | @Pentosh1, @benjamin__cowen | Break above key resistance levels | Medium |
 | Miner capitulation ending | @williamfoxpel, @HsakaTrades | Hash rate stabilization, miner reserves | Low |
 
-**Contrarian Angle:** ETF flows are lagging, not leading. Macro liquidity (M2, real yields) leads by 2-4 weeks.
+**Account's Position:**
+- Contrarian to ETF-dominant narrative
+- Emphasizes macro liquidity (M2, real yields) as leading indicator
+- ETF flows are coincident, not causal
 
 **Inflection Watch:**
-- If ETF flows reverse while price holds, narrative shifts to macro
-- If M2 growth slows while ETFs flow in, narrative shifts to ETF dominance
+- If ETF flows reverse while price holds → narrative shifts to macro
+- If M2 growth slows while ETFs flow in → narrative shifts to ETF dominance
 
 ### Fed/Macro Narrative
 
@@ -37,7 +40,10 @@ Track the current state of dominant market narratives to inform content strategy
 | Higher for longer | @kcliques, @holgerzinn | Sticky core inflation, strong labor | Medium |
 | Recession risk | @LynAldenContact, @davidrosen144 | Yield curve inversion, leading indicators | Medium |
 
-**Contrarian Angle:** Market is pricing in cuts too aggressively. Inflation remains sticky above 3%.
+**Account's Position:**
+- Skeptical of aggressive cut pricing
+- Inflation remains sticky above 3%
+- Liquidity conditions improving, but not dovish pivot yet
 
 **Inflection Watch:**
 - Next CPI print (expect 3.1% YoY)
@@ -56,7 +62,10 @@ Track the current state of dominant market narratives to inform content strategy
 | Bubble concerns | @jszeidl, @intuitmachines | Valuations, ROI questions | Low |
 | Rotation to edge AI | @jimfan, @karpathy | On-device AI, smartphone refresh | Emerging |
 
-**Contrarian Angle:** Valuations assume perfect execution. Any guidance miss = 20%+ downside.
+**Account's Position:**
+- Acknowledges capex cycle
+- Cautious on valuations assuming perfect execution
+- Watching for guidance misses as inflection
 
 **Inflection Watch:**
 - Next NVDA earnings (watch datacenter revenue)
@@ -77,6 +86,32 @@ Track the current state of dominant market narratives to inform content strategy
 - [ ] Soft landing consensus
 - [ ] AI capex infinite cycle
 
+## Account's Recent Theses
+
+### Last 14 Days
+
+| Date | Thesis | Status |
+|------|--------|--------|
+| 2026-08-28 | "GBTC rotation to IBIT continuing. Outflows slowing but still dominant theme." | Playing out |
+| 2026-09-01 | "M2 growth turned positive. This matters more than ETF flows over 2-4 week window." | Playing out |
+| 2026-09-03 | "Real yields peaked. Liquidity setup improving for risk assets." | Playing out |
+
+### Next Logical Posts
+
+Based on current narrative state and recent theses:
+
+1. **Connect ETF flows to macro framework**
+   - Show how both fit the "macro leads, ETFs lag" thesis
+   - Use today's IBIT data + M2/yield data
+
+2. **Update on liquidity thesis**
+   - M2 inflection in July now showing up in risk assets
+   - Real yields peaked, confirming setup
+
+3. **Contrarian take on ETF narrative**
+   - Consensus: "ETFs driving rally"
+   - Contrarian: "ETFs are noise, macro is signal"
+
 ## Content Strategy Implications
 
 ### Double Down On
@@ -90,13 +125,6 @@ Track the current state of dominant market narratives to inform content strategy
 - Generic ETF flow updates (saturated)
 - "Fed pivot is coming" (consensus already)
 - AI bullishness without nuance (crowded)
-
-## Narrative Archive
-
-Link to past narrative analyses in Notion or GitHub for pattern recognition:
-
-- [Notion database link]
-- [GitHub evals/narrative/ folder]
 
 ---
 

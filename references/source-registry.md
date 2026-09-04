@@ -1,4 +1,4 @@
-# Source Registry
+# Source Registry Reference
 
 ## Purpose
 
@@ -125,15 +125,6 @@ When using any source:
 3. **Cross-reference**: Can I verify with 2+ sources?
 4. **Assess credibility**: What's their track record?
 5. **Document**: Record source URL and verification notes
-
-## Source Updates
-
-Update this registry monthly:
-
-- [ ] Add new credible sources discovered
-- [ ] Remove sources that lost credibility
-- [ ] Note any methodology changes
-- [ ] Track which sources you use most
 
 ---
 

@@ -1,47 +1,87 @@
-# Writing Style Guide
+# Writing Style Reference
 
-## Purpose
+## Voice
 
-Maintain consistent, clear, and engaging writing across all X posts and threads.
+### Attributes
 
-## Core Principles
+- Analytical over emotional
+- Confident over arrogant
+- Educational over preachy
+- Humble when wrong
 
-### 1. Clarity First
+### Examples
 
-Write for a smart but busy audience. Assume they know basics but not jargon.
+**Analytical:**
+✅ "Here's what the data shows..."
+❌ "This is insane! BTC is going to the moon!"
 
-❌ "The confluence of tailwinds portends bullish continuation"
-✅ "Bitcoin is going up because of three things: ETF inflows, Fed pivot, and technical breakout"
+**Confident:**
+✅ "This played out as expected. Here's what I'm watching next."
+❌ "I called the top exactly. Follow me for more alpha."
 
-### 2. Specificity Over Generality
+**Educational:**
+✅ "Here's how I think about ETF flows..."
+❌ "You need to understand ETF flows or you'll lose money"
 
-Numbers beat adjectives.
+**Humble:**
+✅ "This didn't play out as I expected. Here's what I missed..."
+❌ [Delete wrong post, pretend it never happened]
 
-❌ "ETF inflows are strong"
-✅ "IBIT added $180M yesterday, the biggest inflow in 2 weeks"
+## Sentence Rhythm
 
-### 3. Active Voice
+### Length
 
-Direct and energetic.
+- Average: 10-20 words per sentence
+- Vary length for rhythm
+- Short sentences for emphasis
 
-❌ "It is believed by analysts that the Fed will pause"
-✅ "Analysts expect the Fed to pause"
-
-### 4. Short Sentences
-
-Aim for 10-20 words average. Vary length for rhythm.
-
+**Example:**
 > BTC dropped 5% today. ETF outflows hit $300M. Macro data disappointed. Here's what's next.
 
-### 5. One Point Per Post
+### Structure
 
-Each post should have 1 clear takeaway. Don't cram multiple theses into one post.
+- Active voice preferred
+- Direct subject-verb-object
+- Avoid passive constructions
+
+**Example:**
+✅ "Analysts expect the Fed to pause"
+❌ "It is believed by analysts that the Fed will pause"
+
+## Vocabulary
+
+### Prefer Simple Words
+
+| Instead of | Use |
+|------------|-----|
+| Consequently | So |
+| Furthermore | Also |
+| However | But |
+| Utilize | Use |
+| Approximately | About |
+| Subsequently | After |
+
+### Avoid Jargon (or Explain It)
+
+| Jargon | Plain English |
+|--------|---------------|
+| Quantitative tightening | Fed reducing bond holdings |
+| Dovish pivot | Fed cutting rates or pausing hikes |
+| Risk-off sentiment | Investors selling risky assets |
+| Liquidity conditions | How easy/hard it is to borrow money |
+
+### Power Words (Use Sparingly)
+
+- Biggest, smallest, record, fastest, slowest
+- Surprising, unexpected
+- Critical, key, important
+- Watch, monitor, track
 
 ## Formatting
 
 ### Line Breaks
 
-Use line breaks (not paragraphs) for readability on X:
+Use line breaks (not paragraphs) for readability:
 
 ```
 Bitcoin is up 12% this week.
@@ -68,7 +108,7 @@ Watching 3 catalysts this week:
 ### Numbers
 
 - Use digits: "5%" not "five percent"
-- Use K/M/B for thousands/millions/billions: "$180M" not "$180,000,000"
+- Use K/M/B: "$180M" not "$180,000,000"
 - Be consistent within a post
 
 ### Hashtags
@@ -76,54 +116,6 @@ Watching 3 catalysts this week:
 - 1-2 max per post
 - Relevant: #Bitcoin #ETF #Fed #Macro
 - Not spammy: #crypto #trading #investing #money #wealth
-
-## Tone
-
-### Analytical, Not Emotional
-
-✅ "BTC up 7% on $2B volume. Biggest move since August."
-❌ "This is insane! BTC is going to the moon!"
-
-### Confident, Not Arrogant
-
-✅ "This played out as expected. Here's what I'm watching next."
-❌ "I called the top exactly. Follow me for more alpha."
-
-### Humble When Wrong
-
-✅ "This didn't play out as I expected. Here's what I missed..."
-❌ [Delete wrong post, pretend it never happened]
-
-### Educational, Not Preachy
-
-✅ "Here's how I think about ETF flows..."
-❌ "You need to understand ETF flows or you'll lose money"
-
-## Hook Formulas
-
-### Data Hook
-
-Start with a surprising or significant number:
-
-> "Bitcoin ETFs just had their biggest outflow day in 3 months: -$412M yesterday."
-
-### Contrarian Hook
-
-Challenge the consensus:
-
-> "Everyone's watching ETF flows. They're looking at the wrong metric."
-
-### Question Hook
-
-Pose a question the audience wants answered:
-
-> "Why did Bitcoin drop 8% on Wednesday? The answer isn't what you think."
-
-### Statement Hook
-
-Make a clear, bold claim:
-
-> "The Fed isn't the driver anymore. Liquidity is."
 
 ## Post Structures
 
@@ -147,87 +139,36 @@ Tweet 8: Conclusion + CTA
 
 Number threads: 1/7, 2/7, 3/7...
 
-### Data Drop
+## Hook Formulas
 
-```
-[Key number]
-[Context/comparison]
-[Implication]
+### Data Hook
 
-[Visual]
-```
+> "Bitcoin ETFs just had their biggest outflow day in 3 months: -$412M yesterday."
 
-Example:
-> GBTC outflows slowed to -$50M/day (from -$200M last week).
->
-> Rotation into IBIT/FBTC continuing.
->
-> [Chart showing flow trends]
+### Contrarian Hook
 
-### Narrative Analysis
+> "Everyone's watching ETF flows. They're looking at the wrong metric."
 
-```
-[State consensus view]
-[Present 2-3 competing narratives]
-[Your take]
+### Question Hook
 
-[Visual or thread]
-```
+> "Why did Bitcoin drop 8% on Wednesday? The answer isn't what you think."
 
-## Word Choice
+### Statement Hook
 
-### Prefer Simple Words
+> "The Fed isn't the driver anymore. Liquidity is."
 
-| Instead of | Use |
-|------------|-----|
-| Consequently | So |
-| Furthermore | Also |
-| However | But |
-| Utilize | Use |
-| Approximately | About |
-| Subsequently | After |
+## Anti-Patterns
 
-### Avoid Jargon (or Explain It)
+### What to Avoid
 
-| Jargon | Plain English |
-|--------|---------------|
-| Quantitative tightening | Fed reducing bond holdings |
-| Dovish pivot | Fed cutting rates or pausing hikes |
-| Risk-off sentiment | Investors selling risky assets |
-| Liquidity conditions | How easy/hard it is to borrow money |
-
-### Power Words (Use Sparingly)
-
-- Biggest, smallest, record, fastest, slowest
-- Surprising, unexpected, surprising
-- Critical, key, important
-- Watch, monitor, track
-
-## Editing Checklist
-
-Before publishing:
-
-- [ ] Hook is specific and scroll-stopping
-- [ ] Main point is clear in first 2 sentences
-- [ ] No jargon without explanation
-- [ ] Sentences average 10-20 words
-- [ ] Active voice throughout
-- [ ] Numbers are specific (not vague)
-- [ ] Visual adds value (not decorative)
-- [ ] Under 280 characters (or thread is numbered)
-- [ ] Spell-checked and grammar-checked
-
-## Common Mistakes
-
-| Mistake | Fix |
-|---------|-----|
-| Weak or generic hook | Start with data or contrarian claim |
-| Too much context | Assume audience knows basics |
-| No visual | Add chart, screenshot, or diagram |
-| Multiple points | Focus on 1 takeaway per post |
-| Overexplaining | Trust audience to connect dots |
-| Emotional language | Keep it analytical and neutral |
-| Vague claims | Add numbers and sources |
+| Pattern | Example | Why It's Bad |
+|---------|---------|-------------|
+| Vague claims | "ETF inflows are strong" | No numbers, not actionable |
+| Emotional language | "This is insane! Moon soon!" | Unprofessional, not analytical |
+| Multiple points | Post about ETFs + macro + technicals + altcoins | Loses focus, confusing |
+| Overexplaining | 5 sentences of setup before main point | Loses audience attention |
+| Jargon without explanation | "QT tapering implies risk-off" | Alienates audience |
+| Arrogant tone | "I called the top exactly" | Damages credibility long-term |
 
 ## Examples
 
@@ -243,11 +184,41 @@ Before publishing:
 >
 > [Chart showing daily flows]
 
+**Why it works:**
+- Specific data point
+- Clear context (biggest in 3 months)
+- Nuanced (not just one ETF)
+- Forward-looking (what to watch)
+- Visual included
+
 ### Bad Post
 
 > Bitcoin is down today because of ETFs and macro and technicals. Lots of selling pressure. Watch this space for more updates. #crypto #Bitcoin #trading
 
-(Why it's bad: Vague, no data, no visual, multiple hashtags, no clear point)
+**Why it's bad:**
+- Vague (no numbers)
+- Multiple factors (unclear what matters)
+- No visual
+- Multiple hashtags (spammy)
+- No clear takeaway
+
+## Account-Specific Preferences
+
+### Tone Calibration
+
+- Default: Analytical and data-driven
+- Contrarian: Challenge consensus with evidence, not contrarian for its own sake
+- Educational: Explain frameworks, not just conclusions
+- Humble: Acknowledge when wrong, explain what was missed
+
+### Content Pillars Alignment
+
+All posts should align with one of:
+- ETF Flow Updates
+- Macro Analysis
+- Narrative Breakdowns
+- Contrarian Takes
+- Educational Threads
 
 ---
 

@@ -1,43 +1,36 @@
-# Account Positioning
+# Account Positioning Reference
 
-## Purpose
+## Who We Are
 
-Define your niche, voice, and value proposition on X to attract the right audience and build authority.
-
-## Positioning Statement
-
-**Template:**
-
-> I help [target audience] understand [topic/niche] by providing [unique value] so they can [outcome].
-
-**Example:**
+### Positioning Statement
 
 > I help retail investors and crypto traders understand macro and market narratives by providing data-driven contrarian analysis so they can make better-informed decisions.
 
-## Target Audience
+### Target Audience
 
-### Primary
-
+**Primary:**
 - Retail investors interested in Bitcoin/crypto
 - Traders following macro and ETF flows
 - Analysts tracking institutional positioning
 
-### Secondary
-
+**Secondary:**
 - Crypto-native audience seeking macro context
 - Macro-focused investors learning crypto
 - Content creators in finance niche
 
-## Niche Definition
+## What We Cover
 
-### What You Cover
+### Content Pillars
 
-- Bitcoin and cryptocurrency markets
-- ETF flows and institutional positioning
-- Macro drivers (Fed policy, liquidity, yields)
-- Market narratives and sentiment analysis
+| Pillar | Description | Frequency |
+|--------|-------------|-----------|
+| ETF Flow Updates | Daily/weekly IBIT, GBTC, FBTC flows | 3-5x/week |
+| Macro Analysis | Fed policy, liquidity, yields, inflation | 2-3x/week |
+| Narrative Breakdowns | Competing explanations for price action | 1-2x/week |
+| Contrarian Takes | Challenge consensus with evidence | 1-2x/week |
+| Educational Threads | Frameworks and mental models | 1x/week |
 
-### What You Don't Cover
+### What We Don't Cover
 
 - Day trading signals or price targets
 - Altcoin shilling or project promotions
@@ -46,7 +39,7 @@ Define your niche, voice, and value proposition on X to attract the right audien
 
 ## Value Proposition
 
-### What Makes You Different
+### What Makes This Account Different
 
 1. **Data-driven**: Every claim backed by verifiable sources
 2. **Contrarian**: Challenge consensus narratives with evidence
@@ -80,33 +73,23 @@ Define your niche, voice, and value proposition on X to attract the right audien
 ✅ "I was wrong about X, here's what I missed..."
 ❌ [Delete wrong posts, pretend they never happened]
 
-## Content Pillars
+## Bio
 
-| Pillar | Description | Frequency |
-|--------|-------------|-----------|
-| ETF Flow Updates | Daily/weekly IBIT, GBTC, FBTC flows | 3-5x/week |
-| Macro Analysis | Fed policy, liquidity, yields, inflation | 2-3x/week |
-| Narrative Breakdowns | Competing explanations for price action | 1-2x/week |
-| Contrarian Takes | Challenge consensus with evidence | 1-2x/week |
-| Educational Threads | Frameworks and mental models | 1x/week |
-
-## Bio Optimization
-
-**Template:**
-
-> [What you do] | [Credibility signal] | [Topics]
-
-**Examples:**
+### Current Bio
 
 > Market analyst | ETF flows, macro, Bitcoin | Contrarian takes backed by data
 
+### Alternative Bios
+
 > Researching crypto & macro | Focused on institutional flows & narratives | Not financial advice
+
+> Data-driven analysis | BTC, ETFs, macro liquidity | Challenging consensus narratives
 
 ## Profile Elements
 
 ### Handle & Name
 
-- Handle: Easy to remember, type, and tag
+- Handle: @opjavicryp-blip (or similar)
 - Name: Real name or recognizable brand
 
 ### Profile Photo
@@ -115,25 +98,10 @@ Define your niche, voice, and value proposition on X to attract the right audien
 - High resolution, recognizable at small size
 - Consistent across platforms
 
-### Banner
+### Banner (Optional)
 
-- Optional: Reinforce niche (charts, branding, tagline)
+- Reinforce niche (charts, branding, tagline)
 - Not cluttered or overly promotional
-
-## Growth Strategy
-
-### Organic
-
-- Post consistently (1-3x/day)
-- Engage with replies within 1 hour
-- Thread high-performing topics
-- Collaborate with adjacent accounts
-
-### Network Building
-
-- Reply thoughtfully to larger accounts in your niche
-- Share and credit others' work
-- Build relationships, not just followers
 
 ## Metrics to Track
 
@@ -144,13 +112,18 @@ Define your niche, voice, and value proposition on X to attract the right audien
 | Profile clicks | >1% per post | Indicates interest in your work |
 | Reply quality | Subjective | Are replies thoughtful or spammy? |
 
-## Positioning Audit (Monthly)
+## Narrative Position
 
-- [ ] Does my content match my positioning statement?
-- [ ] Am I attracting my target audience?
-- [ ] Is my voice consistent across posts?
-- [ ] What topics resonate most? Double down there.
-- [ ] What topics underperform? Reduce or reframe.
+### Current Narrative State
+
+See: narrative-state.md
+
+### How This Account Fits
+
+- Contrarian to ETF-only narrative
+- Emphasizes macro liquidity over flow chasing
+- Educational about frameworks, not just conclusions
+- Data-driven, source-backed claims
 
 ---
 
