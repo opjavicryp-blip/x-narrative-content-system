@@ -2,102 +2,74 @@
 
 ## Purpose
 
-Track the current state of dominant market narratives AND this account's performance narrative.
+Store stable account positioning, active hypotheses, and a dated archive of prior theses.
 
-**Last Updated:** 2026-09-05
+This file is not a live market-data feed. Do not store current prices, current ETF flows, rate probabilities, upcoming economic estimates, or other rapidly stale facts here.
 
----
+## Stable Account Thesis
 
-## Part 1: Market Narratives (External)
+This account examines Bitcoin, macro liquidity, institutional behavior, ETF mechanics, market concentration, and corporate disclosures.
 
-### Bitcoin Narrative
+The operating stance:
+- One data point is rarely a complete causal explanation.
+- Headlines, charts, and social claims require source and scope checks.
+- Institutional product build-out is distinct from client adoption.
+- ETF flows, on-chain movement, and price action should not be treated as self-explanatory.
+- Truth outranks narrative continuity.
 
-**Consensus:** ETF flows are the primary driver of BTC price action.
+## Voice and Editorial Edge
 
-**Competing Narratives:**
+- Lead with a document, number, transaction, or discrepancy that can be checked.
+- Distinguish fact, interpretation, and open question.
+- Prefer a bounded observation to a forced conclusion.
+- Do not force new information into an old thesis.
+- If evidence is incomplete, say what is missing.
 
-| Narrative | Proponents | Evidence | Momentum |
-|-----------|------------|----------|----------|
-| ETF flows dominant | @WClementeIII, @APompliano | Daily IBIT/FBTC/GBTC flow data | High |
-| Macro liquidity driver | @LynAldenContact, @RaoulGMI | M2 growth, real yields, DXY | Medium |
-| Technical momentum | @Pentosh1, @benjamin__cowen | Break above key resistance levels | Medium |
-| Miner capitulation ending | @williamfoxpel, @HsakaTrades | Hash rate stabilization, miner reserves | Low |
+## Active Hypotheses - Re-test, Do Not Assume
 
-**Account's Position:**
-- Contrarian to ETF-dominant narrative
-- Emphasizes macro liquidity (M2, real yields) as leading indicator
+These are research hypotheses, not standing facts:
 
-### Fed/Macro Narrative
+| Hypothesis | What could support it | What could weaken it |
+|---|---|---|
+| ETF-flow concentration may matter more than aggregate flow headlines | Repeated issuer concentration alongside weak breadth | Broad multi-issuer flows and consistent downstream demand |
+| Macro conditions may explain BTC price action better than a daily ETF print over longer windows | Stable relationship across multiple periods and controls | Price action repeatedly follows idiosyncratic flow events instead |
+| Market concentration raises index sensitivity to a small number of earnings and capex narratives | Rising concentration plus narrow breadth and index reaction | Broad participation and resilient breadth |
+| Institutional crypto activity may reflect infrastructure build-out before mass adoption | Job postings, launches, filings, client access | Evidence of little client usage or cancelled products |
 
-**Consensus:** Fed is done hiking, next move is cuts in 2026.
+## Narrative Continuity Rule
 
-**Account's Position:**
-- Skeptical of aggressive cut pricing
-- Inflation remains sticky above 3%
+Before linking a current item to prior content, ask:
 
-### AI/Semiconductor Narrative
+1. Does it genuinely advance, challenge, or resolve an existing hypothesis?
+2. Is the connection evidence-based, not merely topical?
+3. Would the post still make sense if the prior thesis did not exist?
 
-**Consensus:** AI capex cycle will drive semis for years.
+If the answer is no, do not force continuity.
 
-**Account's Position:**
-- Acknowledges capex cycle
-- Cautious on valuations assuming perfect execution
+## Archive Policy
 
----
+Store completed theses as dated entries:
 
-## Part 2: Account Narrative (Internal)
+```markdown
+## [YYYY-MM-DD] - [Topic]
 
-### Current State (as of 2026-09-05)
+### Claim at the time
+[What was said]
 
-**Profile:** @Wail_0x
-- Followers: 479 | Following: 196 | Posts: 11.4K
-- Bio: "Family first | BTC | Markets | Long-term investor | blockchain"
+### Evidence available then
+[Links / documents / data timestamp]
 
-**90-Day Performance:**
-- Impressions: 69,675 total (774 daily avg)
-- Engagements: 5,220 total (58 daily avg)
-- New follows: 153 (1.7/day)
-- Engagement rate: **7.20%** (excellent)
+### What happened next
+[Outcome, unresolved, or invalidated]
 
-**Best Content:**
-1. GM Wisdom: 424 avg impressions, 8.0% engagement
-2. Equities/Earnings: 222 avg, 4.6%
-3. Macro/Fed: 200 avg, 4.6%
-
-**Optimal Format:** 100-200 chars, Monday (1,069 avg)
-
-### Narrative Arc
-
-**Peak:** Week 28 (Jul 6-12) — 10,071 impressions
-**Decline:** Weeks 33-36 — Down 60-70%
-
-**Next Chapter:**
-- Return to GM Wisdom daily
-- 3-4 posts on Monday
-- Target: 1,000+ daily impressions, 3-5 follows/day
-
-### Content Strategy
-
-**Double Down:** GM Wisdom, Monday posting, 100-200 chars
-**Reduce:** Generic ETF updates, long macro (>300 chars), reply-heavy days
-
-**Bio Optimization:**
-```
-Market analyst | ETF flows, macro, Bitcoin
-Contrarian takes backed by data
-Not financial advice
+### Lesson
+[What to preserve or change]
 ```
 
-### Momentum Tracker
+## Current-State Policy
 
-**Account:**
-- [ ] Returning to GM Wisdom daily
-- [ ] Posting 3-4x on Monday
-- [ ] Improving follow conversion (1.7 → 3-5/day)
-- [ ] Investigating Week 28 peak
+For anything time-sensitive, use current research and verification at task time. Then label it CURRENT and include its timestamp in the task output.
 
 ---
 
-**Link:** [Full analytics report](../evals/algorithm/2026-09-05_account-analytics-full-report.md)
-
-*Last updated: 2026-09-05*
+*Last updated: 2026-09-06*

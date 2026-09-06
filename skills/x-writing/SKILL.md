@@ -2,120 +2,121 @@
 
 ## Purpose
 
-Express ideas on X. Optimize for clarity, engagement, and format.
+Turn verified research and an approved narrative decision into clear X content.
 
-## Anti-AI-Pattern Rules (CRITICAL)
+This skill handles expression. It does not invent evidence, settle unresolved claims, or use style to hide weak research.
 
-### What NOT to Do
+## Required Inputs
 
-1. **Don't use "hook → twist → closer" template every time**
-   - Some posts should just say the thing plainly and stop
+- Verification output with claim ledger and publication-safe wording
+- Narrative-analysis output when continuity matters
+- writing-style.md and account-positioning.md
 
-2. **Avoid the brutal reframe in every post**
-   - ❌ "X isn't Y. X is Z."
-   - ✅ Use once or twice a week
+Do not draft from screenshots, headlines, unverified social claims, or raw research notes.
 
-3. **Don't end with ≤5-word epigram every time**
-   - ❌ "Not a prediction. Just a pattern."
-   - ✅ These work because they're rare
+## Factual Precision Gate
 
-4. **Avoid perfect parallelism**
-   - ❌ "Everyone's watching X. I'm watching Y."
-   - ✅ Real sentences are lopsided
+Before drafting, confirm:
 
-5. **Add friction sometimes**
-   - Not every post is clean, resolved, satisfying
-   - Sometimes a thought just ends
+- Every current number was rechecked immediately before writing.
+- Every derived number includes correct arithmetic and time interval.
+- Every direct quote is verbatim and sourced.
+- Every paraphrase has no quotation marks.
+- Every factual claim has a source tier and timestamp.
+- Every causal claim has evidence or has been rewritten as association.
+- No statement exceeds what the evidence proves.
 
-### What TO Do
+If any condition fails, return to source-verification. Writing never compensates for weak evidence.
 
-**Vary post structure:**
-- Plain statement → supporting detail → end
-- Question → data → "not sure" (unresolved)
-- Data → insight → punchline (only if genuinely surprising)
+## Claim Language
 
-**Vary sentence rhythm:**
-- One long sentence. Then short. Then medium.
-- Let some thoughts trail off without punchline
+### Facts
+Use direct wording only for verified claims.
 
----
+### Attribution
+When relying on a named source or incomplete methodology:
+- "River reported..."
+- "According to the filing..."
+- "The tracker classifies..."
 
-## Workflow
+### Paraphrases
+No quotation marks.
 
-1. Review Input
-2. Load Writing Style
-3. Choose Post Structure (A: Plain, B: Question→Unresolved, C: Data→Insight, D: Observation→Aside)
-4. Draft with Varied Rhythm
-5. Apply Anti-AI Check (5 questions)
-6. Final Review
-7. Output
+### Interpretation
+Use bounded language:
+- may
+- could
+- suggests
+- is consistent with
+- worth watching
 
----
+### Causality
+Do not write "drove", "caused", "proves", or "means" unless the verification output established causation.
 
-## Anti-AI Check
+## Anti-AI Pattern Rules
 
-- [ ] Does this have a twist in every paragraph?
-- [ ] Is every sentence the same length?
-- [ ] Does it end with a ≤5-word punchline?
-- [ ] Is there perfect parallelism?
-- [ ] Does every thought resolve cleanly?
+- Do not use hook -> twist -> closer as a default template.
+- Do not repeatedly use "X is not Y. X is Z."
+- Do not end every post with a tiny epigram.
+- Avoid perfect parallelism and overly balanced clauses.
+- Let a post end plainly or remain unresolved when that is the honest state.
+- Use one clear observation rather than forcing a universal lesson.
 
-If YES to any → Rewrite to add friction.
+## Structures to Rotate
 
----
+### A. Plain statement
+Fact -> relevant context -> end.
 
-## Example Output
+### B. Question with uncertainty
+Question -> evidence -> what remains unknown.
+
+### C. Evidence-led observation
+Data -> narrow implication -> what to watch.
+
+### D. Document / receipt
+Primary-source artifact -> factual explanation -> bounded interpretation.
+
+## Drafting Procedure
+
+1. Select one verified central claim.
+2. Select only context that changes the meaning of that claim.
+3. Choose a structure that has not been overused recently.
+4. Draft in varied sentence lengths and natural rhythm.
+5. Remove repetition, fake certainty, forced reversals, and decorative facts.
+6. Run the final factual precision gate again.
+
+## Final Pre-Publish Check
+
+- [ ] Main claim is in the claim ledger as Verified or Partially Verified.
+- [ ] Attribution is present where required.
+- [ ] CURRENT data contains a date or clear time reference.
+- [ ] CONTEXT is not framed as current.
+- [ ] Quote is verbatim or is not in quotation marks.
+- [ ] Calculations and periods are correct.
+- [ ] No unsupported causal language.
+- [ ] No forced narrative connection.
+- [ ] No default hook-twist-punchline rhythm.
+
+## Output
 
 ```markdown
-## X Writing: Fed Rate Hike Odds
-## Date: 2026-09-05
-## Post Type: Contrarian Take + Data
+## X Draft: [Topic]
 
-### Draft
+### Post
+[Publication-ready text]
 
-Fed hike odds jumped to 50%+ after Jackson Hole.
+### Evidence Note
+- Current facts:
+- Context:
+- Attribution required:
 
-Warsh didn't commit. Just said "not enough cooling to 2%" — which is
-hawkish enough when you're at 3.7% PCE.
+### Visual
+[Only an evidence-carrying visual: filing, chart with source/date, transaction/explorer evidence, or official document.]
 
-10-year yield at 4.78%. Highest since Jan 2025.
-
-Market wanted dovish pivot. Fed wants something else. Not sure what yet.
-```
-
-### Variations (A/B Testing)
-
-**Variation A (Plain Statement):**
-```
-Rate hike odds: 50%+ for September.
-
-Up from 35% before Jackson Hole.
-
-Warsh: "Not enough cooling to 2%" with PCE at 3.7%.
-
-10-year yield at 4.78%.
-
-Fed isn't hiking because they want to. They're hiking because inflation
-isn't listening.
-```
-
-**Variation B (Question → Unresolved):**
-```
-Is the Fed actually hiking in September?
-
-CME FedWatch says 50%+ odds.
-
-But Warsh didn't commit. Just said "not enough cooling" — which is
-hawkish, but not "we're definitely hiking."
-
-10-year yield at 4.78% says bond market believes it.
-
-I'm watching CPI on Sep 11. If it's hot, odds go higher. If it cools,
-maybe this was just talk.
-
-Not sure yet.
+### Confidence
+High / Medium / Low
 ```
 
 ---
 
-*Skill version: 2.1 (Anti-AI-Pattern Update) | Last updated: 2026-09-05*
+*Skill version: 3.0 | Last updated: 2026-09-06*

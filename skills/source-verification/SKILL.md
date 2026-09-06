@@ -2,257 +2,177 @@
 
 ## Purpose
 
-Validate claims, data, and sources. Separate fact from interpretation. Identify contradictions.
+Decide what can be stated as fact, what must be attributed, what must be softened, and what cannot be published yet.
+
+Research finds leads. Verification establishes claims.
 
 ## When to Load
 
-Load this skill when:
-- ✅ A claim needs validation before publishing
-- ✅ Source credibility is unclear
-- ✅ Data timestamp is ambiguous
-- ✅ Conflicting reports exist
-- ✅ Social media claim needs primary source check
+Load when a claim, chart, screenshot, quote, calculation, or causal explanation may be used in output.
 
-Do NOT load when:
-- ❌ Gathering fresh data (use market-research)
-- ❌ Analyzing narrative position (use narrative-analysis)
-- ❌ Writing content (use x-writing)
+Do not load merely to brainstorm or collect headlines.
 
-## Source Tiers
+## Evidence Hierarchy
 
-### Tier 1: Primary (Highest Trust)
+### Tier 1 - Primary
 
-- **Official filings**: SEC 13F, Form 4, 10-K, 10-Q
-- **Government data**: BLS, BEA, Federal Reserve, Treasury
-- **Company disclosures**: Earnings releases, investor presentations
-- **Exchange data**: CME, NYSE, NASDAQ official data
-- **On-chain data**: Direct blockchain explorers
+- Official filings, issuer data, prospectuses, company releases
+- Central-bank statements and transcripts
+- Government data: BLS, BEA, Treasury, FRED, SEC, CFTC
+- Exchange or fund administrator data
+- Direct blockchain transaction, block height, UTXO ancestry, explorer link
 
-### Tier 2: Aggregated (High Trust)
+### Tier 2 - Reported primary evidence
 
-- **Financial APIs**: Bloomberg, PitchBook, finance_* tools
-- **Established media**: Reuters, WSJ, FT, Bloomberg News
-- **Industry data**: Glassnode, CryptoQuant (for crypto)
+- Reputable reporting that directly cites and links to Tier 1 material
 
-### Tier 3: Commentary (Medium Trust)
+### Tier 3 - Leads and specialist analysis
 
-- **Analyst reports**: Bank research, independent analysts
-- **Newsletters**: Credible Substack authors with track record
-- **Social media**: Verified analysts with primary source links
+- Research providers, on-chain dashboards, analysts, newsletters
+- Accept only with disclosed methodology and, where possible, cross-checking
 
-### Tier 4: Unverified (Low Trust)
+### Tier 4 - Unverified leads
 
-- Anonymous X accounts without source links
-- Reddit/Telegram rumors
-- Screenshots without context or timestamps
-- Old articles presented as current news
+- Screenshots, social posts, anonymous claims, cropped charts, unattributed images
 
-## Verification Protocol
+Tier 4 never proves a claim.
 
-### For Each Claim, Ask:
+## Mandatory Claim Ledger
 
-1. **What is the exact claim?**
-   - Extract specific assertion (not vague summary)
-   - Example: "BlackRock's IBIT added $180M BTC yesterday" not "ETFs buying"
+Every publication-bound claim must be entered before writing.
 
-2. **What is the primary source?**
-   - Find original disclosure, filing, or data
-   - Not commentary about the source
+| Field | Requirement |
+|---|---|
+| Claim | Exact sentence proposed for publication |
+| Type | Fact / calculation / quote / paraphrase / interpretation / causal claim |
+| Evidence | Direct source or source chain |
+| Source tier | 1-4 |
+| Data timestamp | Date and time, if relevant |
+| Freshness | CURRENT or CONTEXT |
+| Calculation | Formula, inputs, and result if derived |
+| What it does not prove | Explicit limitation |
+| Contradictory evidence | What conflicts or complicates it |
+| Status | Verified / Partially verified / Unverified / Blocked |
 
-3. **What is the timestamp?**
-   - When was this data from?
-   - Is it CURRENT (24h) or CONTEXT (older)?
+## Required Checks
 
-4. **What exactly was said/reported?**
-   - Direct quote or data point
-   - Not interpretation or summary
+### 1. Provenance
 
-5. **Is this fact or interpretation?**
-   - Fact: "IBIT holdings increased by 2,000 BTC"
-   - Interpretation: "BlackRock is aggressively accumulating"
+- Find the original document, filing, transcript, dashboard, or transaction.
+- A screenshot is insufficient without the underlying source.
+- A chart requires source, date, unit, cohort definition, and methodology.
 
-6. **What number was reported?**
-   - Exact figure, not rounded or approximate
-   - Verify calculation if derived
+### 2. Quote Check
 
-7. **Is there more recent disclosure?**
-   - Check if newer data supersedes this
-   - Example: Yesterday's flow vs. last week's flow
+- Quotation marks require verbatim wording and a direct source.
+- If wording is paraphrased, remove quotation marks and say it is a paraphrase.
+- Do not attribute a paraphrase to a named speaker as a quote.
 
-8. **What contradicts this claim?**
-   - Search for opposing evidence
-   - Check if other sources disagree
+### 3. Timestamp Check
 
-## Verification Workflow
+- Recheck every time-sensitive number immediately before drafting.
+- State the date where an older number could be mistaken for current.
+- Replace superseded values with the latest verifiable value.
 
-### Step 1: Extract Claims
+### 4. Calculation Check
 
-From research output or user input:
+- Show the formula.
+- Use signed values correctly.
+- Verify the time interval.
 
-```
-Claim: "BlackRock's IBIT added $180M in BTC yesterday"
-Claim: "ETF inflows are driving BTC rally"
-Claim: "Fed is pausing hikes until Q2 2026"
-```
+Example:
+`-$201M on Sep 1 to +$454M on Sep 3 = $655M directional swing over two trading days.`
 
-### Step 2: Trace to Source
+It is not a $407M move and not one session.
 
-For each claim:
+### 5. Claim-Scope Check
 
-```
-Search: "BlackRock IBIT holdings 2026-09-04"
-Search: "IBIT daily flows September 2026"
-Search: "Fed speaker [name] [date] statement"
-```
+Do not collapse distinct claims:
+- Building a product is not launching a product.
+- Offering access is not customer adoption.
+- ETF flow is not automatically spot buying or selling at that moment.
+- A 50 BTC movement is not automatically a 2010 coinbase reward.
+- A Satoshi-era coin is not evidence of Satoshi ownership.
+- A moved coin is not evidence of sale intent.
 
-Use:
-- finance_etf_holdings for ETF data
-- finance_earnings_transcript for company statements
-- Web search for Fed speakers, news
-- SEC EDGAR for filings
+### 6. Causality Check
 
-### Step 3: Validate Data
+Use causal language only when direct evidence supports it.
 
-```
-✓ Primary source found: fidelity.com/etf/factsheet (2026-09-04)
-✓ Timestamp matches claim: 2026-09-04
-✓ Exact number: +2,847 BTC (+$180M at $58,400)
-✓ Classification: CURRENT (within 24h)
-```
+Prefer:
+- "coincided with"
+- "followed"
+- "is consistent with"
+- "may have contributed"
 
-### Step 4: Assess Credibility
+Avoid:
+- "drove"
+- "caused"
+- "proves"
 
-```
-Source Tier: Tier 1 (official fund factsheet)
-Track Record: No known errors
-Transparency: Full holdings disclosed daily
-Conflict: None identified
-```
+unless the causal link is actually established.
 
-### Step 5: Check Contradictions
+### 7. Contradiction Check
 
-```
-Search: "IBIT outflows September 2026"
-Search: "BlackRock reducing BTC position"
-Search: "GBTC rotation slowing"
+Ask:
+1. What supports the claim?
+2. What contradicts or complicates it?
+3. What newer disclosure could supersede it?
+4. What would falsify the interpretation?
 
-Result: No contradictory data found
-```
+## Publication Status
 
-### Step 6: Classify Evidence
+### VERIFIED
+Primary evidence supports the exact claim, timing, calculation, and scope.
 
-```
-[CURRENT] IBIT +2,847 BTC on 2026-09-04 (fidelity.com)
-[CONTEXT] IBIT has been largest inflow recipient since launch
-[INTERPRETATION] "Aggressive accumulation" - not supported by data (single day)
-```
+### PARTIALLY VERIFIED
+A narrower claim is supported, but wording must be attributed or softened.
 
-## Output Format
+### UNVERIFIED
+Evidence is incomplete, indirect, or conflicting. Do not present as fact.
+
+### BLOCKED
+A necessary primary source, transaction identifier, methodology, calculation, or direct quote cannot be established. Do not publish the claim.
+
+## Required Output
 
 ```markdown
-## Verification: [Claim or Topic]
-## Date: [YYYY-MM-DD]
+## Verification: [Topic]
+## Timestamp: [UTC/local]
 
-### Claims Verified
+### Claim Ledger
+| Claim | Type | Tier | Timestamp | Status | Caveat |
+|---|---|---:|---|---|---|
 
-#### Claim 1: "BlackRock's IBIT added $180M in BTC yesterday"
+### Contradiction Check
+- Supporting evidence:
+- Complicating evidence:
+- More recent data checked:
+- What would change the conclusion:
 
-**Status:** ✅ VERIFIED
+### Publish-Safe Language
+- [Approved wording]
 
-**Primary Source:**
-- URL: fidelity.com/etf/factsheet/ibit
-- Date: 2026-09-04
-- Data: +2,847 BTC (+$180M)
-
-**Timestamp:** CURRENT (within 24h)
-
-**Fact vs. Interpretation:**
-- Fact: +2,847 BTC added ✅
-- Interpretation: "Aggressive accumulation" ⚠️ (single day, not trend)
-
-**Contradictions Checked:**
-- Searched for outflow reports: None found
-- Checked GBTC, FBTC flows: Consistent with rotation narrative
-
-**Confidence:** High
-
----
-
-#### Claim 2: "ETF inflows are driving BTC rally"
-
-**Status:** ⚠️ PARTIALLY_VERIFIED
-
-**Primary Source:**
-- ETF flow data: Verified (fidelity.com, grayscale.com)
-- Correlation with price: Needs statistical analysis
-
-**Timestamp:** CURRENT (flows) + CONTEXT (correlation)
-
-**Fact vs. Interpretation:**
-- Fact: ETF inflows coincided with rally ✅
-- Interpretation: "Driving" implies causation ⚠️ (correlation ≠ causation)
-
-**Contradictions Checked:**
-- Macro liquidity also improved (yields down, DXY down)
-- On-chain data shows miner selling paused
-- Alternative explanation: Macro + technicals, not just ETFs
-
-**Confidence:** Medium
-
-**Note:** Claim oversimplifies. Better: "ETF inflows are one of several drivers alongside macro liquidity improvement."
-
----
-
-### Summary
-
-| Claim | Status | Confidence | Notes |
-|-------|--------|------------|-------|
-| IBIT +$180M | ✅ Verified | High | Primary source confirmed |
-| ETFs driving rally | ⚠️ Partial | Medium | Correlation verified, causation unclear |
-
-### Recommendations
-
-- ✅ Safe to publish: IBIT flow data
-- ⚠️ Reframe before publishing: "ETFs driving" → "ETFs one of several factors"
-- ❌ Do not publish: "Aggressive accumulation" (overstates single day)
-
-### Sources Used
-
-- fidelity.com/etf/factsheet/ibit (Tier 1)
-- grayscale.com/products/gbtc (Tier 1)
-- finance_etf_holdings (Tier 2)
+### Blocked Language
+- [Wording that must not be used]
 ```
 
 ## Interfaces
 
 ### Input
-- Claim(s) to verify
-- Research output from market-research (optional)
-- Time window for current evidence
+- Deep-research evidence pack
+- Candidate claims, charts, quotes, and calculations
 
 ### Output
-- Verification status per claim
-- Primary source citations
-- Fact vs. interpretation classification
-- Contradiction check results
-- Confidence level
-- Publish recommendations
+- Claim ledger
+- Publication-safe wording
+- Contradiction summary
+- Verification status
 
 ### Passes To
-- **narrative-analysis**: If verified claims need narrative connection
-- **x-writing**: If verified and ready to publish
-- **market-research**: If gaps found, need more data
-
-## Common Mistakes
-
-| Mistake | Fix |
-|---------|-----|
-| Accepting commentary as primary source | Find original filing/data |
-| Not checking timestamp | Always verify when data is from |
-| Confusing fact with interpretation | Separate explicitly |
-| Ignoring contradictory evidence | Search for opposing data |
-| Overconfidence in partial verification | Use Medium/Low confidence appropriately |
+- narrative-analysis only when required claims are verified or safely qualified
+- x-writing only with publication-safe wording
 
 ---
 
-*Skill version: 2.0 | Last updated: 2026-09-05*
+*Skill version: 3.0 | Last updated: 2026-09-06*

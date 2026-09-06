@@ -2,225 +2,152 @@
 
 ## Purpose
 
-Find fresh events (last 24h), gather market data, identify unusual movements, form initial thesis.
+Surface current research opportunities. This skill is a scanner first, not a thesis factory.
+
+It finds timely topics, gathers enough evidence to rank them, and stops. Deep research begins only after the user selects a topic.
 
 ## When to Load
 
-Load this skill when task requires:
-- ✅ Finding what happened in last 24 hours
-- ✅ Gathering BTC, equities, macro, or flow data
-- ✅ Identifying unusual market movements
-- ✅ Forming initial thesis from data
+Load when the user asks for:
+- Current market scan
+- 5-10 content ideas
+- Fresh BTC, equities, macro, ETF-flow, or policy developments
+- Unusual moves or possible catalysts
 
-Do NOT load when:
-- ❌ Validating a claim (use source-verification)
-- ❌ Connecting to narrative (use narrative-analysis)
-- ❌ Writing content (use x-writing)
+Do not load for:
+- Claim validation - use source-verification
+- Narrative continuity - use narrative-analysis
+- Post drafting - use x-writing
 
-## Evidence Window
+## Freshness Rules
 
-**Default: CURRENT (last 24 hours)**
+### CURRENT
+Default window: last 24 hours.
 
-Examples:
-- ETF flows: yesterday's data only
-- Price action: today's move
-- News: last 24h events
-- Fed statements: most recent commentary
+Use for prices, flows, news, statements, filings, on-chain movements, policy actions, and platform changes.
 
-**Exception: CONTEXT (label explicitly)**
+### CONTEXT
+No time restriction. Label it explicitly as context.
 
-Examples:
-- Historical patterns: "In 2020-2024, ETF inflows led by 1-3 days"
-- Structural relationships: "M2 growth typically precedes BTC rallies"
-- Background: "GBTC has been outflowing since January"
+Use for historical comparisons, recurring patterns, structural mechanisms, and background.
 
-## Data Sources
+### NARRATIVE
+No time restriction.
 
-### Tier 1 (Primary)
+Use account history only through narrative-analysis, not as a substitute for current evidence.
 
-| Data Type | Source | Tool |
-|-----------|--------|------|
-| ETF Flows | Fidelity IBIT, Grayscale GBTC, BlackRock | finance_etf_holdings |
-| Institutional Holdings | SEC 13F filings | finance_institutional_holders |
-| Insider Trades | SEC Form 4 | finance_insider_transactions |
-| Macro Data | FRED, BLS, BEA | finance_macro_snapshot, finance_macro_history |
-| Earnings | Company filings | finance_earnings_history, finance_earnings_schedule |
-| Price History | Exchange data | finance_ohlcv_histories |
+## Mode A - Topic Scan
 
-### Tier 2 (Aggregated)
+### Objective
 
-| Data Type | Source | Tool |
-|-----------|--------|------|
-| Analyst Estimates | Consensus data | finance_estimates |
-| Company Profile | Business description | finance_company_profile |
-| Peers | Comparable companies | finance_company_peers |
-| Segments | Revenue by segment | finance_segments |
+Return 5-10 candidate topics and rank the three strongest. Do not perform deep research, verification, narrative analysis, or writing until the user chooses a topic.
 
-## Workflow
+### Source Order
 
-### Step 1: Define Research Question
+1. Tier 1: official filings, issuers, central banks, government agencies, exchanges, transcripts, direct blockchain data
+2. Tier 2: reputable reporting that links to Tier 1
+3. Tier 3: specialist data providers and commentary, only as leads unless methodology is available
+4. Tier 4: screenshots, anonymous posts, social claims - leads only
 
-Be specific about time window:
+### Scan Procedure
 
-```
-Good: "What drove BTC price action in last 24h?"
-Good: "What are this week's ETF flow trends?"
-Bad: "What's happening with Bitcoin?" (too vague)
-```
+1. Search CURRENT evidence across relevant domains.
+2. Produce 5-10 topics, each with one or two source-backed facts.
+3. Separate fact from proposed angle.
+4. Score every topic from 1 to 5 on:
+   - Freshness
+   - Source quality
+   - Materiality
+   - Novelty / non-consensus angle
+   - Fit with account positioning
+5. Flag the main caveat or contradiction.
+6. Rank the three strongest topics.
+7. STOP and wait for user selection.
 
-### Step 2: Gather Current Evidence (24h)
+### Required Output
 
-Query for each relevant data type:
+```markdown
+## Market Research Scan
+## Timestamp: [UTC/local]
+## Current Evidence Window: last 24h
 
-```
-1. ETF Flows
-   - IBIT, FBTC, GBTC daily flows
-   - Total industry net flow
-   - Any unusual single-day moves
+| Rank | Topic | Why now | Primary evidence | Caveat | Score |
+|---|---|---|---|---|---|
 
-2. Price Action
-   - BTC, ETH major crypto
-   - Key equities (COIN, MSTR, miners)
-   - Related ETFs
+### Top 3
 
-3. Macro Catalysts
-   - Fed speakers in last 24h
-   - Economic data releases (CPI, NFP, PCE)
-   - Yield curve moves
-   - DXY, liquidity metrics
+1. [Topic]
+   - Verified fact: [fact + source]
+   - Why it could matter: [bounded interpretation]
+   - Main risk: [what is not known]
+   - Suggested deep-research question: [precise question]
 
-4. Unusual Movements
-   - Volume spikes (>2x average)
-   - Price gaps (>5% moves)
-   - Options flow (if available)
-   - Whale transactions (on-chain)
+### Stop Condition
+Select one or more topics for deep research. No draft is produced in scan mode.
 ```
 
-### Step 3: Form Initial Thesis
+## Mode B - Deep Research
 
-Structure:
+Run only after the user explicitly chooses a topic.
 
-```
-## Current Evidence (Last 24h)
+### Procedure
 
-### Key Data Points
-- [Data point 1] - [Source] - [Timestamp]
-- [Data point 2] - [Source] - [Timestamp]
+1. Define a narrow research question and current time window.
+2. Gather Tier 1 evidence first.
+3. Use Tier 2 only to discover or corroborate evidence, not to replace Tier 1 when Tier 1 exists.
+4. Label each item CURRENT or CONTEXT.
+5. Create a preliminary claim ledger for source-verification.
+6. Identify alternative explanations and missing data.
 
-### Unusual Movements
-- [What stood out vs. normal patterns]
-
-### Initial Thesis
-[1-2 sentences explaining what's driving action]
-
-### Evidence Classification
-- CURRENT: [List items from last 24h]
-- CONTEXT: [List any historical/background used]
-```
-
-### Step 4: Flag for Verification
-
-Before passing to next skill:
-
-```
-## Verification Flags
-
-### Claims Needing Source-Verification
-- [Claim 1]: Needs confirmation from [primary source]
-- [Claim 2]: Timestamp unclear, verify [source]
-
-### Contradictions to Check
-- [Data point A] seems to contradict [Data point B]
-- [Social media claim] conflicts with [official data]
-
-### Gaps
-- [What data is missing for complete picture]
-```
-
-## Output Format
+### Required Output
 
 ```markdown
 ## Research: [Topic]
-## Date: [YYYY-MM-DD]
-## Evidence Window: CURRENT (last 24h) + CONTEXT (labeled)
+## Timestamp: [UTC/local]
+## Evidence Window: CURRENT + labeled CONTEXT
 
 ### Current Evidence
+- [Fact] | [source] | [timestamp]
 
-#### ETF Flows
-- IBIT: +$180M (2026-09-04) [finance_etf_holdings]
-- GBTC: -$50M (2026-09-04) [finance_etf_holdings]
-- Total: +$130M net [calculated]
-
-#### Price Action
-- BTC: +3.2% to $58,400 (24h) [finance_ohlcv_histories]
-- COIN: +5.1% [finance_quotes]
-- MSTR: +4.8% [finance_quotes]
-
-#### Macro
-- No Fed speakers in last 24h
-- 10Y yield: -8bps to 4.12% [finance_macro_snapshot]
-- DXY: -0.4% [finance_quotes]
-
-#### Unusual Movements
-- BTC volume 2.3x 30-day average
-- IBIT largest inflow since 2026-08-28
-
-### Contextual Evidence (Labeled)
-
-- GBTC has been outflowing since January 2026 [CONTEXT]
-- M2 growth turned positive in July 2026 [CONTEXT]
-- Historical pattern: ETF inflows lead price by 1-3 days [CONTEXT]
+### Context
+- [Historical/background fact] | [source] | [date]
 
 ### Initial Thesis
+[One bounded, falsifiable interpretation.]
 
-BTC rally driven by combination of ETF rotation (GBTC → IBIT/FBTC) and macro liquidity improvement (falling yields, weaker DXY). Volume surge suggests institutional participation.
+### Alternative Explanations
+- [Alternative]
 
-### Verification Flags
+### Verification Queue
+- [Exact claim requiring source-verification]
 
-#### Claims Needing Source-Verification
-- "Volume 2.3x average": Verify against 30-day calc
-- "Largest inflow since 2026-08-28": Check exact date
-
-#### Contradictions to Check
-- None identified
-
-#### Gaps
-- On-chain whale data not checked
-- Options flow not available
-
-### Confidence: Medium
-
-Reason: ETF and price data verified. Volume claim needs confirmation. On-chain data missing.
+### Gaps
+- [Missing data]
 ```
 
-## Common Mistakes
+## Hard Rules
 
-| Mistake | Fix |
-|---------|-----|
-| Using old data without labeling | Mark as [CONTEXT] or find current data |
-| Vague research question | Specify time window and data types |
-| Mixing CURRENT and CONTEXT | Separate sections clearly |
-| Skipping verification flags | Always flag claims needing check |
-| Overcomplicating thesis | 1-2 sentences, data-driven |
+- A screenshot is a lead, not evidence.
+- Do not treat a social post, chart, or headline as a primary source.
+- Do not claim causation from coincidence.
+- Do not call an item "current" if it is older than 24 hours without stating its date.
+- Do not turn one source into a market-wide conclusion.
+- Stop after the scan unless the user selects a topic.
 
 ## Interfaces
 
 ### Input
-- Research question with time window
-- List of data types to gather
+- Scan request or selected topic
+- Relevant market / asset universe
 
 ### Output
-- Current evidence (last 24h)
-- Contextual evidence (labeled)
-- Initial thesis
-- Verification flags
-- Confidence level
+- Mode A: ranked topic shortlist and stop condition
+- Mode B: evidence pack, bounded thesis, verification queue
 
 ### Passes To
-- **source-verification**: For claim validation
-- **narrative-analysis**: For thesis connection to narrative
-- **x-writing**: If immediate publish needed (skip narrative)
+- source-verification after deep research
+- narrative-analysis only after claims are verified
 
 ---
 
-*Skill version: 2.0 | Last updated: 2026-09-05*
+*Skill version: 3.0 | Last updated: 2026-09-06*
