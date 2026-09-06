@@ -1,122 +1,44 @@
-# X Writing Skill
+# Skill: X Writing
 
 ## Purpose
 
-Turn verified research and an approved narrative decision into clear X content.
+Produce clear, accurate, and responsible analytical posts for X that:
+- stand on their own;
+- reflect verified evidence;
+- make uncertainty visible when it matters.
 
-This skill handles expression. It does not invent evidence, settle unresolved claims, or use style to hide weak research.
+## Process
 
-## Required Inputs
+1. **Define the core claim**
+   - One sentence that captures the main point.
 
-- Verification output with claim ledger and publication-safe wording
-- Narrative-analysis output when continuity matters
-- writing-style.md and account-positioning.md
+2. **Structure the argument**
+   - Lead with the claim.
+   - Add 1–3 supporting points with concrete numbers or comparisons.
+   - Keep each sentence focused on a single idea.
 
-Do not draft from screenshots, headlines, unverified social claims, or raw research notes.
+3. **Ground in evidence**
+   - Ensure every factual assertion is backed by verified sources.
+   - Use precise language that matches the strength of the evidence.
 
-## Factual Precision Gate
+4. **Literal final pass**
+   - Read the final draft character by character for:
+     - ticker symbols;
+     - dates;
+     - maturities (e.g., 10-year vs 30-year);
+     - signs (+ / -);
+     - percentages and decimal points;
+     - currency units;
+     - names and quotations.
+   - Correct any discrepancies before publishing.
 
-Before drafting, confirm:
+5. **Clarity and responsibility**
+   - Remove unnecessary jargon.
+   - Avoid sensational framing.
+   - Make key uncertainties explicit when they affect interpretation.
 
-- Every current number was rechecked immediately before writing.
-- Every derived number includes correct arithmetic and time interval.
-- Every direct quote is verbatim and sourced.
-- Every paraphrase has no quotation marks.
-- Every factual claim has a source tier and timestamp.
-- Every causal claim has evidence or has been rewritten as association.
-- No statement exceeds what the evidence proves.
+## Style Notes
 
-If any condition fails, return to source-verification. Writing never compensates for weak evidence.
-
-## Claim Language
-
-### Facts
-Use direct wording only for verified claims.
-
-### Attribution
-When relying on a named source or incomplete methodology:
-- "River reported..."
-- "According to the filing..."
-- "The tracker classifies..."
-
-### Paraphrases
-No quotation marks.
-
-### Interpretation
-Use bounded language:
-- may
-- could
-- suggests
-- is consistent with
-- worth watching
-
-### Causality
-Do not write "drove", "caused", "proves", or "means" unless the verification output established causation.
-
-## Anti-AI Pattern Rules
-
-- Do not use hook -> twist -> closer as a default template.
-- Do not repeatedly use "X is not Y. X is Z."
-- Do not end every post with a tiny epigram.
-- Avoid perfect parallelism and overly balanced clauses.
-- Let a post end plainly or remain unresolved when that is the honest state.
-- Use one clear observation rather than forcing a universal lesson.
-
-## Structures to Rotate
-
-### A. Plain statement
-Fact -> relevant context -> end.
-
-### B. Question with uncertainty
-Question -> evidence -> what remains unknown.
-
-### C. Evidence-led observation
-Data -> narrow implication -> what to watch.
-
-### D. Document / receipt
-Primary-source artifact -> factual explanation -> bounded interpretation.
-
-## Drafting Procedure
-
-1. Select one verified central claim.
-2. Select only context that changes the meaning of that claim.
-3. Choose a structure that has not been overused recently.
-4. Draft in varied sentence lengths and natural rhythm.
-5. Remove repetition, fake certainty, forced reversals, and decorative facts.
-6. Run the final factual precision gate again.
-
-## Final Pre-Publish Check
-
-- [ ] Main claim is in the claim ledger as Verified or Partially Verified.
-- [ ] Attribution is present where required.
-- [ ] CURRENT data contains a date or clear time reference.
-- [ ] CONTEXT is not framed as current.
-- [ ] Quote is verbatim or is not in quotation marks.
-- [ ] Calculations and periods are correct.
-- [ ] No unsupported causal language.
-- [ ] No forced narrative connection.
-- [ ] No default hook-twist-punchline rhythm.
-
-## Output
-
-```markdown
-## X Draft: [Topic]
-
-### Post
-[Publication-ready text]
-
-### Evidence Note
-- Current facts:
-- Context:
-- Attribution required:
-
-### Visual
-[Only an evidence-carrying visual: filing, chart with source/date, transaction/explorer evidence, or official document.]
-
-### Confidence
-High / Medium / Low
-```
-
----
-
-*Skill version: 3.0 | Last updated: 2026-09-06*
+- Prefer short sentences and concrete nouns.
+- Use numbers to anchor claims.
+- Avoid vague qualifiers like "huge", "massive", "skyrocketing" without data.
